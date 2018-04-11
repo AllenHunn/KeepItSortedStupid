@@ -1,8 +1,9 @@
 {
   "name": "keepitsortedstupid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a basic implementation of a sorted array, designed to maintain a collection of items in such a way that it can easily be searched via binary search. Built with effeciency and ease of use in mind.",
-  "main": "index.js",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
   "scripts": {
     "test": "mocha -r ts-node/register ./**/*.spec.ts"
   },
