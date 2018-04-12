@@ -25,7 +25,7 @@ export class SortedArray<T> {
 
         while (last >= first) {
             // tslint:disable-next-line:no-bitwise
-            let mid: number = Math.floor((first + last) >> 1);
+            let mid: number = (first + last) >> 1;
             let item: T = this.contents[mid];
             if (item === value) {
                 return mid;
