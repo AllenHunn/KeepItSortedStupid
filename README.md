@@ -46,7 +46,7 @@ console.log(`Contains 9? ${sortedHash.contains(9)}`);
 // FindIndex
 console.log(`Index for 4: ${sortedHash.findIndex(4)}`);
 // ForEach
-sortedHash.forEach((item) => console.log(`Value: ${value}`));
+sortedHash.forEach((item) => console.log(`Value: ${item}`));
 // ForEachWithKey
 sortedHash.forEachWithKey((key, value) => console.log(`Key: ${key} Value: ${value}`));
 // Map
@@ -88,7 +88,7 @@ console.log(`Contains 9? ${sortedHash.contains(9)}`);
 // FindIndex
 console.log(`Index for 4: ${sortedHash.findIndex(4)}`);
 // ForEach
-sortedHash.forEach((item) => console.log(`Value: ${value}`));
+sortedHash.forEach((item) => console.log(`Value: ${item}`));
 // ForEachWithKey
 sortedHash.forEachWithKey((key, value) => console.log(`Key: ${key} Value: ${value}`));
 // Map
