@@ -115,6 +115,23 @@ describe("SortedHash", () => {
         });
     });
 
+    describe("mapWithKey", () => {
+        it("should execute a function on each instance and return a new array of values", () => {
+            const testData: any[] = [];
+            for(let i:number = 1; i <= 10; i++) {
+                testData.push([i, i]);
+            }
+            const ki: SortedHash<number, number> = new SortedHash<number, number>(testData);
+
+            expect(ki.count).equals(10, "Should have 10 items");
+
+
+            let modded: number[] = ki.mapWithKey((key: number, value: number) => value * 2);
+
+            expect(modded).eqls([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
+        });
+    });
+
     describe("large collections", () => {
         it("should be able to handle large collections being bulk inserted", () => {
             const testData: any[] = [];

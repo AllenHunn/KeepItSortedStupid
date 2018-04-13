@@ -9,6 +9,8 @@ export declare class SortedHash<TKey, TValue> {
     insert(key: TKey, value: TValue): void;
     delete(key: TKey): void;
     forEach(func: Function): void;
+    forEachWithKey(func: Function): void;
     map(func: Function): TValue[];
+    mapWithKey(func: Function): TValue[];
     private sort();
 }

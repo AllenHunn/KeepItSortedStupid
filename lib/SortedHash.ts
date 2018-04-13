@@ -78,8 +78,16 @@ export class SortedHash<TKey, TValue> {
         _.forEach(this.contents, (node) => func(node.value));
     }
 
+    forEachWithKey(func: Function): void {
+        _.forEach(this.contents, (node) => func(node.key, node.value));
+    }
+
     map(func: Function): TValue[] {
         return _.map(this.contents, (node) => func(node.value));
+    }
+
+    mapWithKey(func: Function): TValue[] {
+        return _.map(this.contents, (node) => func(node.key, node.value));
     }
 
     private sort(): void {
