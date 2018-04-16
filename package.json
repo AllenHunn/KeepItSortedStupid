@@ -1,7 +1,11 @@
 {
   "name": "keepitsortedstupid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a basic implementation of a sorted array, designed to maintain a collection of items in such a way that it can easily be searched via binary search. Built with effeciency and ease of use in mind.",
+  "repository":  { 
+    "type" : "git", 
+    "url" : "https://github.com/AllenHunn/KeepItSortedStupid.git"
+  },
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
   "scripts": {
